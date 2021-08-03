@@ -77,6 +77,10 @@ function Header({ classes, onDrawerToggle, title }) {
 								{title}
 							</Typography>
 						</Grid>
+						<Grid item>
+						</Grid>
+						<Grid item>
+						</Grid>
 					</Grid>
 				</Toolbar>
 			</AppBar>

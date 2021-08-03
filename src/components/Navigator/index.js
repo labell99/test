@@ -23,7 +23,7 @@ import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 import Logo from 'components/Logo'
 const categories = [
 	{
-		id: 'IDS',
+		id: 'DATA',
 		children: [
 			{ id: 'View', icon: <DnsRoundedIcon />, page: 'database' },
 			{ id: 'Store', icon: <PublicIcon />, page: 'hosting' },
@@ -99,7 +99,7 @@ function Navigator({ classes, location = null, ...rest }) {
 								primary: classes.itemPrimary,
 							}}
 						>
-							Immunogen Design & Selection
+							IDS
 						</ListItemText>
 					</ListItem>
 				</Link>
