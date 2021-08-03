@@ -23,7 +23,7 @@ import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 import Logo from 'components/Logo'
 const categories = [
 	{
-		id: 'DATA',
+		id: 'Data',
 		children: [
 			{ id: 'View', icon: <DnsRoundedIcon />, page: 'database' },
 			{ id: 'Store', icon: <PublicIcon />, page: 'hosting' },
