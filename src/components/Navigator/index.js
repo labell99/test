@@ -26,7 +26,7 @@ const categories = [
 		id: 'Data',
 		children: [
 			{ id: 'View', icon: <DnsRoundedIcon />, page: 'database' },
-			{ id: 'Store', icon: <PublicIcon />, page: 'hosting' },
+			{ id: 'Create', icon: <PublicIcon />, page: 'hosting' },
 		],
 	},
 ]
