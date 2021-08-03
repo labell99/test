@@ -9,6 +9,7 @@ import Hidden from '@material-ui/core/Hidden'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import NotificationsIcon from '@material-ui/icons/Notifications'
+import AccountCircle from '@material-ui/icons';
 import Toolbar from '@material-ui/core/Toolbar'
 import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
@@ -62,9 +63,7 @@ function Header({ classes, onDrawerToggle, title }) {
 						</Hidden>
 						<Grid item xs />
 						<Grid item>
-							<IconButton color="inherit" className={classes.iconButtonAvatar}>
-								<Avatar className={classes.avatar} src="/images/avatar.jpg" />
-							</IconButton>
+							<AccountCircle />
 						</Grid>
 					</Grid>
 				</Toolbar>
