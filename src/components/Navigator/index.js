@@ -84,7 +84,7 @@ function Navigator({ classes, location = null, ...rest }) {
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
 					<Grid container alignItems="center" spacing={8} direction="row">
 						<Grid item>
-							<Logo />
+
 						</Grid>
 					</Grid>
 				</ListItem>
