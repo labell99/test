@@ -21,7 +21,7 @@ import TimerIcon from '@material-ui/icons/Timer'
 import SettingsIcon from '@material-ui/icons/Settings'
 import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 import Logo from 'components/Logo'
-import { ImageSrc } from '../../../public/images/logo.png';
+//import { Logo } from '../../../public/images/logo.png';
 
 const categories = [
 	{
@@ -86,7 +86,7 @@ function Navigator({ classes, location = null, ...rest }) {
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
 					<Grid container alignItems="center" spacing={8} direction="row">
 						<Grid item>
-							<ImageSrc />
+							<Logo />
 						</Grid>
 					</Grid>
 				</ListItem>
