@@ -86,7 +86,6 @@ function Navigator({ classes, location = null, ...rest }) {
 						<Grid item>
 							<Logo />
 						</Grid>
-						<Grid item>Paperbase</Grid>
 					</Grid>
 				</ListItem>
 
