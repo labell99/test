@@ -62,18 +62,6 @@ function Header({ classes, onDrawerToggle, title }) {
 						</Hidden>
 						<Grid item xs />
 						<Grid item>
-							<Typography className={classes.link} component="a" href="#">
-								Go to docs
-							</Typography>
-						</Grid>
-						<Grid item>
-							<Tooltip title="Alerts • No alters">
-								<IconButton color="inherit">
-									<NotificationsIcon />
-								</IconButton>
-							</Tooltip>
-						</Grid>
-						<Grid item>
 							<IconButton color="inherit" className={classes.iconButtonAvatar}>
 								<Avatar className={classes.avatar} src="/images/avatar.jpg" />
 							</IconButton>
@@ -88,18 +76,6 @@ function Header({ classes, onDrawerToggle, title }) {
 							<Typography style={{ textTransform: 'capitalize' }} color="inherit" variant="h5">
 								{title}
 							</Typography>
-						</Grid>
-						<Grid item>
-							<Button className={classes.button} variant="outlined" color="inherit" size="small">
-								Web setup
-							</Button>
-						</Grid>
-						<Grid item>
-							<Tooltip title="Help">
-								<IconButton color="inherit">
-									<HelpIcon />
-								</IconButton>
-							</Tooltip>
 						</Grid>
 					</Grid>
 				</Toolbar>
