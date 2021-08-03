@@ -21,7 +21,7 @@ import TimerIcon from '@material-ui/icons/Timer'
 import SettingsIcon from '@material-ui/icons/Settings'
 import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 //import Logo from 'components/Logo'
-import { Logo } from '../../../public/images/logo.png';
+import { Logo } from '/public/images/logo.png';
 
 const categories = [
 	{
