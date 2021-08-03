@@ -33,14 +33,6 @@ const categories = [
 			{ id: 'ML Kit', icon: <SettingsInputComponentIcon />, page: 'ml' },
 		],
 	},
-	{
-		id: 'Quality',
-		children: [
-			{ id: 'Analytics', icon: <SettingsIcon />, page: 'analytics' },
-			{ id: 'Performance', icon: <TimerIcon />, page: 'performance' },
-			{ id: 'Test Lab', icon: <PhonelinkSetupIcon />, page: 'lab' },
-		],
-	},
 ]
 
 const styles = theme => ({
