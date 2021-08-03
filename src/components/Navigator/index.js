@@ -25,12 +25,8 @@ const categories = [
 	{
 		id: 'Develop',
 		children: [
-			{ id: 'Authentication', icon: <PeopleIcon />, page: 'authentication' },
 			{ id: 'Database', icon: <DnsRoundedIcon />, page: 'database' },
-			{ id: 'Storage', icon: <PermMediaOutlinedIcon />, page: 'storage' },
 			{ id: 'Hosting', icon: <PublicIcon />, page: 'hosting' },
-			{ id: 'Functions', icon: <SettingsEthernetIcon />, page: 'functions' },
-			{ id: 'ML Kit', icon: <SettingsInputComponentIcon />, page: 'ml' },
 		],
 	},
 ]
