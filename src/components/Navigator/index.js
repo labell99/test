@@ -20,8 +20,7 @@ import SettingsInputComponentIcon from '@material-ui/icons/SettingsInputComponen
 import TimerIcon from '@material-ui/icons/Timer'
 import SettingsIcon from '@material-ui/icons/Settings'
 import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
-//import Logo from 'components/Logo'
-import { Logo } from '../../../static/images/logo.png';
+import Logo from 'components/Logo'
 
 const categories = [
 	{
@@ -86,7 +85,7 @@ function Navigator({ classes, location = null, ...rest }) {
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
 					<Grid container alignItems="center" spacing={8} direction="row">
 						<Grid item>
-							<Logo />
+				           <img src={`logo.png`} alt="ecam logo" width="100" height="40" style={{ alignSelf: 'left' }} />
 						</Grid>
 					</Grid>
 				</ListItem>
