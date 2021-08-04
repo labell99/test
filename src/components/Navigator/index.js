@@ -85,7 +85,7 @@ function Navigator({ classes, location = null, ...rest }) {
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
 					<Grid container alignItems="center" spacing={8} direction="row">
 						<Grid item>
-				           <img src={`/images/logo.png`} width="500" height="90" style={{ alignSelf: 'left' }} />
+				           <img src={`/images/logo.png`} width="250" height="45" style={{ alignSelf: 'left' }} />
 						</Grid>
 					</Grid>
 				</ListItem>
