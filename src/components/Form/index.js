@@ -308,12 +308,6 @@ const OrderForm = () => {
                   <StyledButton theme={theme} disabled={formik.isSubmitting} onClick={formik.submitForm} size="large">
                     Submit Data
                   </StyledButton>
-                  <StyledButton theme={theme} disabled size="large">
-                    Print Report
-                  </StyledButton>
-                  <StyledButton theme={theme} disabled size="large">
-                    Send Report
-                  </StyledButton>
                 </CardActions>
               </Card>
             </Form>
