@@ -39,11 +39,10 @@ const styles = theme => ({
 		padding: '48px 36px 0',
 	},
 })
-const tabNames = ['Data', 'Rules', 'Indexes', 'Usage']
+
 function DatabaseContent({ classes }) {
 	return (
 		<>
-			<TabBar tabNames={tabNames} />
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
 					<AppBar className={classes.searchBar} position="static" color="default" elevation={0}>
