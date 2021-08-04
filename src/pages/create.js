@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import { Container } from '@material-ui/core';
+import OrderForm from 'components/Form';
 
 function CreatePage({ location }) {
 	const pageTitle = location ? location.pathname.replace(/\//g, '') : ''
