@@ -11,7 +11,7 @@ function CreatePage({ location }) {
 		<Layout location={location} title={pageTitle}>
 		  <Container maxWidth="md" style={{ margin: '1rem auto' }}>
 		   test
-
+		   <OrderForm />
 		  </Container>
 		</Layout>
 	)
