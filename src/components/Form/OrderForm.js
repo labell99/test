@@ -19,7 +19,6 @@ import MomentUtils from '@date-io/moment';
 import moment from 'moment';
 
 // order components
-import Confirm from './Confirm';
 import OrderProducts from './OrderProducts';
 
 // netlify form encode
@@ -42,7 +41,6 @@ const StyledButton = styled(Button)`
 const OrderForm = () => {
   const [price, setPrice] = useState(50);
   const [tabValue, setTabValue] = useState(0);
-  const [confirmShow, setConfirmShow] = useState(false);
 
   const theme = useTheme();
 
