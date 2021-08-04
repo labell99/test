@@ -24,6 +24,7 @@
     "typeface-merriweather": "^0.0.72",
     "typeface-montserrat": "^0.0.75",
     "typography": "^0.16.19",
+    "styled-components": "^5.1.1",
     "yup": "^0.29.1",
     "axios": "^0.21.1",
     "moment": "^2.27.0"
