@@ -21,7 +21,6 @@ import moment from 'moment';
 // order components
 import Confirm from './Confirm';
 import OrderProducts from './OrderProducts';
-import OrderHeader from './OrderHeader';
 
 // netlify form encode
 const encode = data =>
@@ -155,8 +154,6 @@ const OrderForm = () => {
             <Form name="Orders" data-netlify="true">
               <Card >
                 <CardContent>
-                  {/* Header */}
-                  <OrderHeader />
 
                   <Grid container spacing={2}>
                     {/* Products */}
