@@ -8,6 +8,7 @@ function CreatePage({ location }) {
 	return (
 		<Layout location={location} title={pageTitle}>
 			<Content />
+			test
 		</Layout>
 	)
 }
