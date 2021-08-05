@@ -13,6 +13,7 @@ import { withStyles } from '@material-ui/core/styles'
 import SearchIcon from '@material-ui/icons/Search'
 import RefreshIcon from '@material-ui/icons/Refresh'
 import TabBar from 'components/TabBar'
+import MUIDataTable from "mui-datatables";
 
 const styles = theme => ({
 	paper: {
@@ -41,6 +42,28 @@ const styles = theme => ({
 })
 
 function DatabaseContent({ classes }) {
+	    const columns = [
+	      "Name",
+	      "Contact",
+	      "Email",
+	      "LastName",
+	      "User Key",
+	      "Action"
+	    ];
+
+	    const data = [
+	      "Name",
+	      "Contact",
+	      "Email",
+	      "LastName",
+	      "User Key",
+	      "Action"
+	    ];
+
+	    const options = {
+	      filterType: "dropdown",
+	      responsive: "stacked"
+        };
 	return (
 		<>
 			<div className={classes.container}>
@@ -77,7 +100,12 @@ function DatabaseContent({ classes }) {
 
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
-							No users for this project yet
+							 <MUIDataTable
+							    title={"User Listing"}
+							    data={data}
+							    columns={columns}
+							    options={options}
+                             />
 						</Typography>
 					</div>
 				</Paper>
