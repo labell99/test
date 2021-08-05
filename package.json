@@ -40,7 +40,7 @@
     "yup": "^0.29.1",
     "axios": "^0.21.1",
     "moment": "^2.27.0",
-    "mui-datatables", "^3.7.7"
+    "mui-datatables": "^3.7.7"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
