@@ -59,7 +59,7 @@ function DatabaseContent({ classes }) {
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
 							 <MUIDataTable
-							    title={"User Listing"}
+							    title={"IDS"}
 							    data={data}
 							    columns={columns}
 							    options={options}
