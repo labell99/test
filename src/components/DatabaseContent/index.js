@@ -31,12 +31,34 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 	    const columns = [
-	      "Name",
-	      "Contact",
-	      "Email",
-	      "LastName",
-	      "User Key",
-	      "Action"
+	      "VaccineName",
+	      "RecordNumber",
+	      "VaccineType",
+	      "VaccineApplication",
+	      "VaccineTarget",
+	      "Emergence",
+	      "ShortName",
+	      "LongName",
+	      "FACTA. Target",
+	      "FACTA. Genome",
+	      "SpikeVariants",
+	      "OtherVariants",
+	      "PANGO Link",
+	      "BV-BRC Link",
+	      "AminoAcid",
+	      "Conserved",
+	      "VariantTargets",
+	      "Description",
+	      "Category",
+	      "Type",
+	      "Subcategory",
+	      "IPReference",
+	      "Phenotypes",
+	      "PublicationSource",
+	      "REFlinks",
+	      "Users",
+	      "Notes",
+	      "Variant Source Note (SIB)"
 	    ];
 
 	    const data = [
