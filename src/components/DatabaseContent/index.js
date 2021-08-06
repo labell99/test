@@ -34,9 +34,9 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 
- const [data, setData] = useState([]);
+const [data, setData] = useState([]);
 
- useEffect(() => {
+useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
       identifier: 'lee_abell@hotmail.com',
       password: 'Test123!',
@@ -56,7 +56,7 @@ function DatabaseContent({ classes }) {
         var UsersArray = [];
         for (let i = 0; i < resultsets.length; i++) {
           var name = resultsets[i].VaccineName;
-          var recordNumber = resultsets[i].RecordNumber;
+          var recordNumber = parseInt(resultsets[i].RecordNumber, 10);
           var vaccineType = resultsets[i].VaccineType;
           var vaccineApplication = resultsets[i].VaccineApplication;
           var vaccineTarget = resultsets[i].VaccineTarget;
@@ -127,8 +127,7 @@ function DatabaseContent({ classes }) {
         }
       });
     });
-  }, []);
-
+}, []);
 
 const columns = [
  {
@@ -329,12 +328,12 @@ const columns = [
  },
 ];
 
-	    const options = {
-	      filterType: "dropdown",
-	      responsive: "stacked"
-        };
+const options = {
+	  filterType: "dropdown",
+	  responsive: "stacked"
+};
 
-	return (
+return (
 		<>
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
@@ -351,7 +350,7 @@ const columns = [
 				</Paper>
 			</div>
 		</>
-	)
+)
 }
 
 DatabaseContent.propTypes = {
