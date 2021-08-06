@@ -34,21 +34,20 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 
-
  useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
       identifier: 'lee_abell@hotmail.com',
       password: 'Test123!',
-    })
+    }).then(resp => {
 
-    var authtoken = "Bearer " + resp.data.jwt;
-	const headers = {
+      var authtoken = "Bearer " + resp.data.jwt;
+	  const headers = {
         'Authorization': authtoken,
         'accept': 'application/json'
-    };
+      };
 
-    axios.get(`http://54.198.204.54:1337/ids`, { headers })
-      .then(response => {
+      axios.get(`http://54.198.204.54:1337/ids`, { headers })
+        .then(response => {
         /* USER data is received here ! */
         var resultsets = response.data;
         console.log("mount: ",resultsets);
@@ -82,6 +81,7 @@ function DatabaseContent({ classes }) {
           alert("Authentication Error! Please login again");
         }
       });
+    });
   }, []);
 
 
