@@ -34,7 +34,7 @@ const styles = theme => ({
 function DatabaseContent({ classes }) {
 
 
- componentDidMount() {
+ useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
       identifier: 'lee_abell@hotmail.com',
       password: 'Test123!',
@@ -81,7 +81,7 @@ function DatabaseContent({ classes }) {
           alert("Authentication Error! Please login again");
         }
       });
-  }
+  }, []);
 
 
 	    const columns = [
