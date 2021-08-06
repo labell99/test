@@ -14,7 +14,7 @@ import SearchIcon from '@material-ui/icons/Search'
 import RefreshIcon from '@material-ui/icons/Refresh'
 import TabBar from 'components/TabBar'
 import MUIDataTable from "mui-datatables";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 
 const styles = theme => ({
@@ -34,9 +34,7 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 
- state = {
-   data: []
- };
+ const [data, setData] = useState([]);
 
  useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
@@ -119,10 +117,7 @@ function DatabaseContent({ classes }) {
         }
 
         console.log("mount: ",UsersArray);
-
-        this.setState(() => {
-          data: UsersArray
-        });
+        setData(UsersArray);
       })
       .catch(error => {
         // handle error
@@ -165,8 +160,6 @@ function DatabaseContent({ classes }) {
 	      "Notes",
 	      "Source Note (SIB)"
 	    ];
-
-	    const data = [];
 
 	    const options = {
 	      filterType: "dropdown",
