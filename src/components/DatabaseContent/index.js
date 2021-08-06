@@ -130,36 +130,204 @@ function DatabaseContent({ classes }) {
   }, []);
 
 
-	    const columns = [
-	      "Record Number",
-	      "Name",
-	      "Type",
-	      "Application",
-	      "Target",
-	      "Emergence",
-	      "Nucliotide ShortName",
-	      "Nucliotide LongName",
-	      "Target",
-	      "Genome",
-	      "Spike Variants",
-	      "Other Variants",
-	      "PANGO",
-	      "BVBRC",
-	      "Amino Acid",
-	      "Conserved",
-	      "Variant Targets",
-	      "Description",
-	      "Category",
-	      "Type",
-	      "Subcategory",
-	      "IPReference",
-	      "Phenotypes",
-	      "Source",
-	      "REFlinks",
-	      "Users",
-	      "Notes",
-	      "Source Note (SIB)"
-	    ];
+const columns = [
+ {
+  name: "Record Number",
+  options: {
+   filter: true,
+   sort: true,
+  }
+ },
+ {
+  name: "Name",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Type",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Application",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Target",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Emergence",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Nucliotide ShortName",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Nucliotide LongName",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Target",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Genome",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Spike Variants",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Other Variants",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "PANGO",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "BVBRC",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Amino Acid",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Conserved",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Variant Targets",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Description",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Category",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Type",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Subcategory",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "IPReference",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Phenotypes",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Source",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "REFlinks",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Users",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Notes",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+ {
+  name: "Source Note (SIB)",
+  options: {
+   filter: true,
+   sort: false,
+  }
+ },
+];
 
 	    const options = {
 	      filterType: "dropdown",
