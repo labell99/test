@@ -135,7 +135,7 @@ const columns = [
   options: {
    filter: true,
    sort: true,
-   sortDirection: 'desc',
+   sortDirection: 'asc',
   }
  },
  {
@@ -330,8 +330,13 @@ const columns = [
 ];
 
 const options = {
-	  filterType: "dropdown",
-	  responsive: "stacked"
+  filter: true,
+  filterType: 'dropdown',
+  responsive: 'vertical',
+  sortOrder: {
+   name: 'Record Number',
+   direction: 'asc'
+  }
 };
 
 return (
