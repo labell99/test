@@ -160,7 +160,7 @@ function DatabaseContent({ classes }) {
 	      "Source Note (SIB)"
 	    ];
 
-	    const data = this.state.data;
+	    const data = [];
 
 	    const options = {
 	      filterType: "dropdown",
