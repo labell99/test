@@ -50,7 +50,7 @@ function DatabaseContent({ classes }) {
         .then(response => {
 
         var resultsets = response.data;
-        console.log("mount: ",resultsets);
+
         var UsersArray = [];
         for (let i = 0; i < resultsets.length; i++) {
           var name = resultsets[i].VaccineName;
@@ -114,7 +114,9 @@ function DatabaseContent({ classes }) {
           UsersArray.push(UserArray);
         }
 
-        this.setState({
+        console.log("mount: ",UsersArray);
+
+        this.setState(() => {
           data: UsersArray
         });
       })
