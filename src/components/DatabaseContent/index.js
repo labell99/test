@@ -31,34 +31,34 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 	    const columns = [
-	      "VaccineName",
-	      "RecordNumber",
-	      "VaccineType",
-	      "VaccineApplication",
-	      "VaccineTarget",
+	      "Name",
+	      "Record Number",
+	      "Type",
+	      "Application",
+	      "Target",
 	      "Emergence",
-	      "ShortName",
-	      "LongName",
-	      "FACTA. Target",
-	      "FACTA. Genome",
-	      "SpikeVariants",
-	      "OtherVariants",
-	      "PANGO Link",
-	      "BV-BRC Link",
-	      "AminoAcid",
+	      "Nucliotide ShortName",
+	      "Nucliotide LongName",
+	      "Target",
+	      "Genome",
+	      "Spike Variants",
+	      "Other Variants",
+	      "PANGO",
+	      "BVBRC",
+	      "Amino Acid",
 	      "Conserved",
-	      "VariantTargets",
+	      "Variant Targets",
 	      "Description",
 	      "Category",
 	      "Type",
 	      "Subcategory",
 	      "IPReference",
 	      "Phenotypes",
-	      "PublicationSource",
+	      "Source",
 	      "REFlinks",
 	      "Users",
 	      "Notes",
-	      "Variant Source Note (SIB)"
+	      "Source Note (SIB)"
 	    ];
 
 	    const data = [
@@ -81,7 +81,7 @@ function DatabaseContent({ classes }) {
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
 							 <MUIDataTable
-							    title={"IDS"}
+							    title={"Immunogen Design & Selection"}
 							    data={data}
 							    columns={columns}
 							    options={options}
