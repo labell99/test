@@ -135,6 +135,7 @@ const columns = [
   options: {
    filter: true,
    sort: true,
+   sortDirection: 'asc',
   }
  },
  {
