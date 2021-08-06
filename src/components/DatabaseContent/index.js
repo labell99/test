@@ -78,7 +78,7 @@ const styles = theme => ({
       });
   }
 
-function DatabaseContent({ classes }) {
+class DatabaseContent({ classes }) {
 	    const columns = [
 	      "Name",
 	      "Record Number",
