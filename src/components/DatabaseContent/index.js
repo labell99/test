@@ -29,6 +29,55 @@ const styles = theme => ({
 	},
 })
 
+ componentDidMount() {
+    axios.post('http://54.198.204.54:1337/auth/local', {
+      identifier: 'lee_abell@hotmail.com',
+      password: 'Test123!',
+    })
+
+    var authtoken = "Bearer " + resp.data.jwt;
+	const headers = {
+        'Authorization': authtoken,
+        'accept': 'application/json'
+    };
+
+    axios.get(`http://54.198.204.54:1337/ids`, { headers })
+      .then(response => {
+        /* USER data is received here ! */
+        var resultsets = response.data;
+        console.log("mount: ",resultsets);
+        /* var UsersArray = [];
+        for (let i = 0; i < resultsets.length; i++) {
+          var fullName =
+            resultsets[i].first_name + " " + resultsets[i].last_name;
+          var contactNum = resultsets[i].mobile_number;
+          var email = resultsets[i].email;
+          var lastName = resultsets[i].last_name;
+          var userKey = resultsets[i].user_key;
+
+          var UserArray = [];
+          UserArray.push(fullName);
+          UserArray.push(contactNum);
+          UserArray.push(email);
+          UserArray.push(lastName);
+          UserArray.push(userKey);
+
+          UsersArray.push(UserArray);
+        }
+
+        this.setState({
+          data: UsersArray
+        }); */
+      })
+      .catch(error => {
+        // handle error
+        console.log(error);
+        if (error.response.status == 401) {
+          alert("Authentication Error! Please login again");
+        }
+      });
+  }
+
 function DatabaseContent({ classes }) {
 	    const columns = [
 	      "Name",
