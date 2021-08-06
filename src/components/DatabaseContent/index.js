@@ -34,6 +34,10 @@ const styles = theme => ({
 
 function DatabaseContent({ classes }) {
 
+ state = {
+   data: []
+ };
+
  useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
       identifier: 'lee_abell@hotmail.com',
