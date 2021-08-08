@@ -358,7 +358,7 @@ return (
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
-						  <MuiThemeProvider theme={this.getMuiTheme()}>
+						  <MuiThemeProvider theme={getMuiTheme()}>
 							 <MUIDataTable
 							    title={"Immunogen Design & Selection"}
 							    data={data}
