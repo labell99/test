@@ -16,6 +16,19 @@ import TabBar from 'components/TabBar'
 import MUIDataTable from "mui-datatables";
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+
+const getMuiTheme = () => createMuiTheme({
+    overrides: {
+      MUIDataTableBodyCell: {
+        root: {
+          backgroundColor: "#FFF",
+          width: "50px"
+        }
+      }
+    }
+  })
+
 
 const styles = theme => ({
 	paper: {
@@ -345,12 +358,14 @@ return (
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
+						  <MuiThemeProvider theme={this.getMuiTheme()}>
 							 <MUIDataTable
 							    title={"Immunogen Design & Selection"}
 							    data={data}
 							    columns={columns}
 							    options={options}
                              />
+                             </MuiThemeProvider>
 						</Typography>
 					</div>
 				</Paper>
