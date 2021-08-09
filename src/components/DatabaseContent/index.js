@@ -22,7 +22,7 @@ const getMuiTheme = () => createMuiTheme({
     overrides: {
       MUIDataTableBodyCell: {
         root: {
-		  whiteSpace: 'nowrap'
+		  whiteSpace: 'nowrap',
           width: "50px"
         }
       }
