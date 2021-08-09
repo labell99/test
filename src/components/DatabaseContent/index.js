@@ -151,28 +151,28 @@ const columns = [
   }
  },
  {
-  name: "Name",
+  name: "Vaccine Name",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "Type",
+  name: "Vaccine Type",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "Application",
+  name: "Vaccine Application",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "Target",
+  name: "Vaccine Target",
   options: {
    filter: true,
    sort: false,
@@ -200,14 +200,14 @@ const columns = [
   }
  },
  {
-  name: "Target",
+  name: "FACTA Target",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "Genome",
+  name: "FACTA Genome",
   options: {
    filter: true,
    sort: false,
@@ -305,14 +305,14 @@ const columns = [
   }
  },
  {
-  name: "Source",
+  name: "PubSource",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "REFlinks",
+  name: "RefLinks",
   options: {
    filter: true,
    sort: false,
