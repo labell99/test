@@ -64,7 +64,7 @@ useEffect(() => {
         .then(response => {
 
         var resultsets = response.data;
-
+        console.log("resultsets ",resultsets);
         var UsersArray = [];
         for (let i = 0; i < resultsets.length; i++) {
           var name = resultsets[i].VaccineName;
@@ -76,7 +76,9 @@ useEffect(() => {
           var shortName = resultsets[i].ntShortName;
           var longName = resultsets[i].ntLongName;
           var fTarget = resultsets[i].FACTATarget;
+          console.log("fTarget ",fTarget);
           var fGenome = resultsets[i].FACTAGenome;
+          console.log("fGenome ",fGenome);
           var sVariants = resultsets[i].SpikeVariants;
           var oVariants = resultsets[i].OtherVariants;
           var PANGO = resultsets[i].PANGO;
