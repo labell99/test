@@ -75,10 +75,9 @@ useEffect(() => {
           var Emergence = resultsets[i].Emergence;
           var shortName = resultsets[i].ntShortName;
           var longName = resultsets[i].ntLongName;
-          var fTarget = resultsets[i].FACTATarget;
+          var fTarget = resultsets[i].FACTAtarget;
           console.log("fTarget ",fTarget);
           var fGenome = resultsets[i].FACTAGenome;
-          console.log("fGenome ",fGenome);
           var sVariants = resultsets[i].SpikeVariants;
           var oVariants = resultsets[i].OtherVariants;
           var PANGO = resultsets[i].PANGO;
@@ -91,12 +90,12 @@ useEffect(() => {
 		  var Type = resultsets[i].Type;
           var Subcategory = resultsets[i].Subcategory;
           var IPReference = resultsets[i].IPReference;
-          var Phenotypes = resultsets[i].Phenotypes;
+          var Phenotypes = resultsets[i].DOI;
           var PublicationSource = resultsets[i].PublicationSource;
           var REFlinks = resultsets[i].REFlinks;
 		  var Users = resultsets[i].Users;
           var Notes = resultsets[i].Notes;
-          var Notes2 = resultsets[i].Notes;
+          var Notes2 = resultsets[i].Notes2;
 
           var UserArray = [];
           UserArray.push(recordNumber);
