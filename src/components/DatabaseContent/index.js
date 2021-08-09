@@ -76,7 +76,6 @@ useEffect(() => {
           var shortName = resultsets[i].ntShortName;
           var longName = resultsets[i].ntLongName;
           var fTarget = resultsets[i].FACTAtarget;
-          console.log("fTarget ",fTarget);
           var fGenome = resultsets[i].FACTAGenome;
           var sVariants = resultsets[i].SpikeVariants;
           var oVariants = resultsets[i].OtherVariants;
