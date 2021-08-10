@@ -97,6 +97,7 @@ useEffect(() => {
           var Notes2 = resultsets[i].Notes2;
 
           var UserArray = [];
+          UserArray.push("");
           UserArray.push(recordNumber);
           UserArray.push(name);
           UserArray.push(vaccineType);
