@@ -149,7 +149,7 @@ const columns = [
      sort: false,
      customBodyRender: (value, tableMeta, updateValue) => {
        return (
-         <button onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
+         <button variant="contained" onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
             Edit
          </button>
        );
