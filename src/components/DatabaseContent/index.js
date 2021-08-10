@@ -106,8 +106,8 @@ useEffect(() => {
           UserArray.push(recordNumber);
           UserArray.push(name);
           UserArray.push(vaccineType);
-          UserArray.push(vaccineApplication);
           UserArray.push(vaccineTarget);
+          UserArray.push(vaccineApplication);
           UserArray.push(Emergence);
           UserArray.push(shortName);
           UserArray.push(longName);
@@ -162,7 +162,7 @@ const columns = [
    }
  },
  {
-  name: "Record Number",
+  name: "No.",
   options: {
    filter: true,
    sort: true,
@@ -184,14 +184,14 @@ const columns = [
   }
  },
  {
-  name: "Vaccine Application",
+  name: "Vaccine Target",
   options: {
    filter: true,
    sort: false,
   }
  },
  {
-  name: "Vaccine Target",
+  name: "Vaccine Application",
   options: {
    filter: true,
    sort: false,
