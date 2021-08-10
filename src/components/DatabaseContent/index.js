@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from '../../components/Modal';
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -47,6 +48,10 @@ const styles = theme => ({
 function DatabaseContent({ classes }) {
 
 const [data, setData] = useState([]);
+
+restorePopup(value) {
+  window.alert(`Clicked "Edit" for row ${value}`)
+}
 
 useEffect(() => {
     axios.post('http://54.198.204.54:1337/auth/local', {
@@ -150,7 +155,7 @@ const columns = [
      sort: false,
      customBodyRender: (value, tableMeta, updateValue) => {
        return (
-         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
+         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => restorePopup(tableMeta.value}>
             Edit
          </Button>
        );
