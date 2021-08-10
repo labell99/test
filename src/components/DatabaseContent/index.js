@@ -60,14 +60,14 @@ function popupDialog(value) {
     <Modal.Body>
         <FormGroup>
             <label>Email address</label>
-            <Input
+            <input
                 type="email"
                 placeholder="Email"
             />
         </FormGroup>
         <FormGroup>
             <label>Password</label>
-            <Input
+            <input
                 type="password"
                 placeholder="Password"
             />
