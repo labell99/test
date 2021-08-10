@@ -143,7 +143,7 @@ useEffect(() => {
 
 const columns = [
  {
-   name: "Edit",
+   name: "",
    options: {
      filter: true,
      sort: false,
