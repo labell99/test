@@ -345,6 +345,7 @@ const options = {
   filter: true,
   filterType: 'dropdown',
   responsive: 'vertical',
+  selectableRows: false,
   sortOrder: {
    name: 'Record Number',
    direction: 'asc'
