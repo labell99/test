@@ -149,9 +149,9 @@ const columns = [
      sort: false,
      customBodyRender: (value, tableMeta, updateValue) => {
        return (
-         <button variant="contained" onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
+         <Button variant="contained" onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
             Edit
-         </button>
+         </Button>
        );
      }
    }
