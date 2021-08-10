@@ -49,8 +49,8 @@ function DatabaseContent({ classes }) {
 
 const [data, setData] = useState([]);
 
-restorePopup(value) {
-  window.alert(`Clicked "Edit" for row ${value}`)
+function popupDialog(value) {
+  window.alert(`Clicked "Edit" for row ${value}`);
 }
 
 useEffect(() => {
@@ -154,7 +154,7 @@ const columns = [
      sort: false,
      customBodyRender: (value, tableMeta, updateValue) => {
        return (
-         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => restorePopup(tableMeta.rowIndex}>
+         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => popupDialog(tableMeta.rowIndex}>
             Edit
          </Button>
        );
