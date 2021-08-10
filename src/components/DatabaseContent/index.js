@@ -51,7 +51,7 @@ function DatabaseContent({ classes }) {
 const [data, setData] = useState([]);
 
 function popupDialog(value) {
- <Modal showOverlay={false}>
+ <Modal >
     <Modal.Header>
         <Modal.Title>
             Modal title
@@ -73,10 +73,6 @@ function popupDialog(value) {
             />
         </FormGroup>
     </Modal.Body>
-    <Modal.Footer>
-        <Button>Cancel</Button>
-        <Button btnStyle="primary">Save</Button>
-    </Modal.Footer>
 </Modal>
 window.alert(`Clicked "Edited" for row ${value}`);
 }
