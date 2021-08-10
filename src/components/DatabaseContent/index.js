@@ -143,6 +143,20 @@ useEffect(() => {
 
 const columns = [
  {
+   name: "Edit",
+   options: {
+     filter: true,
+     sort: false,
+     customBodyRender: (value, tableMeta, updateValue) => {
+       return (
+         <button onClick={() => window.alert(`Clicked "Edit" for row ${tableMeta.rowIndex}`)}>
+            Edit
+         </button>
+       );
+     }
+   }
+ },
+ {
   name: "Record Number",
   options: {
    filter: true,
