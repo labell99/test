@@ -50,7 +50,7 @@ function DatabaseContent({ classes }) {
 const [data, setData] = useState([]);
 
 function popupDialog(value) {
-  window.alert(`Clicked "Edit" for row ${value}`);
+  window.alert(`Clicked "Edited" for row ${value}`);
 }
 
 useEffect(() => {
@@ -162,7 +162,7 @@ const columns = [
    }
  },
  {
-  name: "No.",
+  name: "Record Number",
   options: {
    filter: true,
    sort: true,
