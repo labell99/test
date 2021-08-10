@@ -134,7 +134,6 @@ useEffect(() => {
           UsersArray.push(UserArray);
         }
 
-        console.log("mount: ",UsersArray);
         setData(UsersArray);
       })
       .catch(error => {
@@ -155,7 +154,7 @@ const columns = [
      sort: false,
      customBodyRender: (value, tableMeta, updateValue) => {
        return (
-         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => restorePopup(tableMeta.value}>
+         <Button style={{background: 'lightBlue'}} variant="contained" onClick={() => restorePopup(tableMeta.rowIndex}>
             Edit
          </Button>
        );
