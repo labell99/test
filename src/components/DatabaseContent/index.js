@@ -54,6 +54,10 @@ function DatabaseContent({ classes }) {
 
 const [data, setData] = useState([]);
 
+function handleCloseDialog() {
+
+}
+
 function popupDialog(value) {
 					<Dialog
 						open="true"
