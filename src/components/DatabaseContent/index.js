@@ -60,7 +60,7 @@ function handleCloseDialog() {
 
 function popupDialog(value) {
 					<Dialog
-						open="true"
+						open={true}
 					>
 						<DialogTitle>
 							<Typography className="pt-8 font-medium text-24">test open</Typography>
