@@ -59,12 +59,12 @@ function popupDialog(value) {
 						open="true"
 					>
 						<DialogTitle>
-							<Typography className="pt-8 font-medium text-24">{dialog.title}</Typography>
+							<Typography className="pt-8 font-medium text-24">test open</Typography>
 						</DialogTitle>
 						<DialogContent>
 							<DialogContentText
 								className="leading-normal text-14"
-								dangerouslySetInnerHTML={{ __html: dialog.content }}
+								dangerouslySetInnerHTML="inner text"
 							/>
 						</DialogContent>
 						<DialogActions className="p-16">
