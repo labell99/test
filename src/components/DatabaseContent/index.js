@@ -59,15 +59,7 @@ function toggleModal() {
 
 function popupDialog(value) {
 	  setIsOpen(!isOpen);
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModal}
-        contentLabel="My dialog"
-      >
-        <div>My modal dialog.</div>
-        <button onClick={toggleModal}>Close modal</button>
-      </Modal>
-window.alert(`Clicked "Edited" for row ${value}`);
+      //window.alert(`Clicked "Edited" for row ${value}`);
 }
 
 useEffect(() => {
@@ -402,6 +394,14 @@ return (
 							    columns={columns}
 							    options={options}
                              />
+                                <Modal
+							       isOpen={isOpen}
+							       onRequestClose={toggleModal}
+							       contentLabel="My dialog"
+							    >
+							         <div>My modal dialog.</div>
+							         <button onClick={toggleModal}>Close modal</button>
+                                </Modal>
                              </MuiThemeProvider>
 						</Typography>
 					</div>
