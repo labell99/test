@@ -49,21 +49,21 @@ const styles = theme => ({
 function DatabaseContent({ classes }) {
 
 const [data, setData] = useState([]);
+const [isOpen, setIsOpen] = useState(false);
 
-function handleCloseDialog() {
-
+function toggleModal() {
+  setIsOpen(!isOpen);
 }
 
 function popupDialog(value) {
+	  setIsOpen(!isOpen);
       <Modal
-        show={true}
-        centered
-        onHide={(e) => console.log(e)}
+        isOpen={isOpen}
+        onRequestClose={toggleModal}
+        contentLabel="My dialog"
       >
-        <Modal.Header closeButton />
-        <Modal.Body>
-          <h1>TestInhalt</h1>
-        </Modal.Body>
+        <div>My modal dialog.</div>
+        <button onClick={toggleModal}>Close modal</button>
       </Modal>
 window.alert(`Clicked "Edited" for row ${value}`);
 }
