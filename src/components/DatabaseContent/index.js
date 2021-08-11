@@ -1,5 +1,9 @@
 import React from 'react'
-import Modal from '../../components/Modal';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 import FormGroup from '@material-ui/core/FormGroup';
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
@@ -51,29 +55,27 @@ function DatabaseContent({ classes }) {
 const [data, setData] = useState([]);
 
 function popupDialog(value) {
- <Modal isOpen="true">
-    <Modal.Header>
-        <Modal.Title>
-            Modal title
-        </Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-        <FormGroup>
-            <label>Email address</label>
-            <input
-                type="email"
-                placeholder="Email"
-            />
-        </FormGroup>
-        <FormGroup>
-            <label>Password</label>
-            <input
-                type="password"
-                placeholder="Password"
-            />
-        </FormGroup>
-    </Modal.Body>
-</Modal>
+					<Dialog
+						open={dialog.open}
+						onClose={handleCloseDialog}
+						aria-labelledby="knowledge-base-document"
+						TransitionComponent={Transition}
+					>
+						<DialogTitle>
+							<Typography className="pt-8 font-medium text-24">{dialog.title}</Typography>
+						</DialogTitle>
+						<DialogContent>
+							<DialogContentText
+								className="leading-normal text-14"
+								dangerouslySetInnerHTML={{ __html: dialog.content }}
+							/>
+						</DialogContent>
+						<DialogActions className="p-16">
+							<Button onClick={handleCloseDialog} color="primary" variant="outlined">
+								CLOSE
+							</Button>
+						</DialogActions>
+					</Dialog>
 window.alert(`Clicked "Edited" for row ${value}`);
 }
 
