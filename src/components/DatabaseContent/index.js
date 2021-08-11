@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal } from 'react-bootstrap'
+import Modal from "react-modal";
 import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
@@ -19,6 +19,8 @@ import MUIDataTable from "mui-datatables";
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+
+Modal.setAppElement("#root");
 
 const getMuiTheme = () => createMuiTheme({
     overrides: {
