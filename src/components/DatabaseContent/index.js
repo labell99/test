@@ -51,7 +51,7 @@ function DatabaseContent({ classes }) {
 const [data, setData] = useState([]);
 
 function popupDialog(value) {
- <Modal isOpen=true>
+ <Modal isOpen="true">
     <Modal.Header>
         <Modal.Title>
             Modal title
