@@ -56,10 +56,7 @@ const [data, setData] = useState([]);
 
 function popupDialog(value) {
 					<Dialog
-						open={dialog.open}
-						onClose={handleCloseDialog}
-						aria-labelledby="knowledge-base-document"
-						TransitionComponent={Transition}
+						open="true"
 					>
 						<DialogTitle>
 							<Typography className="pt-8 font-medium text-24">{dialog.title}</Typography>
