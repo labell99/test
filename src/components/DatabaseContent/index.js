@@ -20,7 +20,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#___gatsby')
 
 const getMuiTheme = () => createMuiTheme({
     overrides: {
