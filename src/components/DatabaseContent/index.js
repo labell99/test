@@ -1,10 +1,6 @@
 import React from 'react'
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import FormGroup from '@material-ui/core/FormGroup';
+import { Modal } from 'react-bootstrap'
+import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -59,24 +55,16 @@ function handleCloseDialog() {
 }
 
 function popupDialog(value) {
-					<Dialog
-						show={true}
-					>
-						<DialogTitle>
-							<Typography className="pt-8 font-medium text-24">test open</Typography>
-						</DialogTitle>
-						<DialogContent>
-							<DialogContentText
-								className="leading-normal text-14"
-								dangerouslySetInnerHTML="inner text"
-							/>
-						</DialogContent>
-						<DialogActions className="p-16">
-							<Button onClick={handleCloseDialog} color="primary" variant="outlined">
-								CLOSE
-							</Button>
-						</DialogActions>
-					</Dialog>
+      <Modal
+        show={true}
+        centered
+        onHide={(e) => console.log(e)}
+      >
+        <Modal.Header closeButton />
+        <Modal.Body>
+          <h1>TestInhalt</h1>
+        </Modal.Body>
+      </Modal>
 window.alert(`Clicked "Edited" for row ${value}`);
 }
 
