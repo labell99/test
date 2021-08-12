@@ -29,7 +29,6 @@
     "formik": "^2.1.4",
     "formik-material-ui": "^2.0.1",
     "formik-material-ui-pickers": "^0.0.10",    
-    "@trendmicro/react-modal": "^3.1.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^6.1.0",
@@ -42,8 +41,7 @@
     "axios": "^0.21.1",
     "moment": "^2.27.0",
     "mui-datatables": "^3.7.7",
-    "react-bootstrap": "^1.6.1",
-    "react-modal": "^3.14.3"   
+    "react-bootstrap": "^1.0.0"   
   },
   "devDependencies": {
     "eslint": "^6.8.0",

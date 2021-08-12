@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from "react-modal";
+import { DataModal } from "../modal"
 import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
@@ -19,8 +19,6 @@ import MUIDataTable from "mui-datatables";
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-
-Modal.setAppElement('#___gatsby')
 
 const getMuiTheme = () => createMuiTheme({
     overrides: {
@@ -59,7 +57,7 @@ function toggleModal() {
 
 function popupDialog(value) {
 	  setIsOpen(!isOpen);
-      //window.alert(`Clicked "Edited" for row ${value}`);
+      window.alert(`Clicked "Edited" for row ${value}`);
 }
 
 useEffect(() => {
@@ -394,19 +392,11 @@ return (
 							    columns={columns}
 							    options={options}
                              />
+                             <DataModal show={isOpen} />
                              </MuiThemeProvider>
 						</Typography>
 					</div>
 				</Paper>
-				                <Modal
-				                  show={isOpen}
-								  isOpen={isOpen}
-								  onRequestClose={toggleModal}
-								  contentLabel="My dialog"
-								>
-								  <p>My modal dialog.</p>
-								  <button onClick={toggleModal}>Close modal</button>
-                                </Modal>
 			</div>
 		</>
 )
