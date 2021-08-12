@@ -50,6 +50,7 @@ function DatabaseContent({ classes }) {
 
 const [data, setData] = useState([]);
 const [isOpen, setIsOpen] = useState(false);
+const [modalInfo, setModalInfo] = useState({ name: "", age: "" });
 
 function toggleModal() {
   setIsOpen(!isOpen);
@@ -392,7 +393,7 @@ return (
 							    columns={columns}
 							    options={options}
                              />
-                             <DataModal show={isOpen} />
+                             <DataModal post={modalInfo} show={isOpen} />
                              </MuiThemeProvider>
 						</Typography>
 					</div>
