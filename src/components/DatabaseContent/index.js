@@ -399,11 +399,12 @@ return (
 					</div>
 				</Paper>
 				                <Modal
+				                  show={isOpen}
 								  isOpen={isOpen}
 								  onRequestClose={toggleModal}
 								  contentLabel="My dialog"
 								>
-								  <div>My modal dialog.</div>
+								  <p>My modal dialog.</p>
 								  <button onClick={toggleModal}>Close modal</button>
                                 </Modal>
 			</div>
