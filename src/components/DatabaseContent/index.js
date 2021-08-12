@@ -394,18 +394,18 @@ return (
 							    columns={columns}
 							    options={options}
                              />
-                                <Modal
-							       isOpen={isOpen}
-							       onRequestClose={toggleModal}
-							       contentLabel="My dialog"
-							    >
-							         <div>My modal dialog.</div>
-							         <button onClick={toggleModal}>Close modal</button>
-                                </Modal>
                              </MuiThemeProvider>
 						</Typography>
 					</div>
 				</Paper>
+				                <Modal
+								  isOpen={isOpen}
+								  onRequestClose={toggleModal}
+								  contentLabel="My dialog"
+								>
+								  <div>My modal dialog.</div>
+								  <button onClick={toggleModal}>Close modal</button>
+                                </Modal>
 			</div>
 		</>
 )
