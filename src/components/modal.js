@@ -27,9 +27,6 @@ export const DataModal = ({ post, close, show }) => (
         <Modal.Body>
             <Container>
                 <Row>
-                    <Col lg={4}>
-                        <Image post={post} className="modal-image" />
-                    </Col>
                     <Col lg={8}>
                         <Container>
                             <Info title="Name:" detail={post.name} />
