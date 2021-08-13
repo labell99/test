@@ -17,7 +17,6 @@ const Info = ({ title, detail }) => (
 
 export const DataModal = ({ post, close, show }) => (
     <Modal
-        centered
         show={show}
         onHide={close}
         dialogClassName="modal-90w"
@@ -60,6 +59,7 @@ export const DataModal = ({ post, close, show }) => (
 		          <Button
 		            color="secondary"
 		            type="button"
+		            style={{display: 'flex', justifyContent: 'right'}
 		          >
 		            Close
 		          </Button>
