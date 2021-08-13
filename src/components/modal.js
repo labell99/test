@@ -54,6 +54,9 @@ export const DataModal = ({ post, close, show }) => (
                     </Col>
                 </Row>
             </Container>
+            <Button variant="primary" >
+			            Save Changes
+            </Button>
         </Modal.Body>
     </Modal>
 )
