@@ -59,7 +59,7 @@ export const DataModal = ({ post, close, show }) => (
 		          <Button
 		            color="secondary"
 		            type="button"
-		            style={{display: 'flex', justifyContent: 'right'}
+		            style={{display: 'flex', justifyContent: 'right'}}
 		          >
 		            Close
 		          </Button>
