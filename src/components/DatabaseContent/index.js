@@ -58,7 +58,7 @@ function toggleModal() {
 
 function popupDialog(value) {
 	  setIsOpen(!isOpen);
-      window.alert(`Clicked "Edited" for row ${value}`);
+    //  window.alert(`Clicked "Edited" for row ${value}`);
 }
 
 useEffect(() => {
