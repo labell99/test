@@ -385,6 +385,7 @@ return (
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
+					   <DataModal post={modalInfo} close={toggleModal} show={isOpen} />
 						<Typography color="textSecondary" align="center">
 						  <MuiThemeProvider theme={getMuiTheme()}>
 							 <MUIDataTable
@@ -393,7 +394,6 @@ return (
 							    columns={columns}
 							    options={options}
                              />
-                             <DataModal post={modalInfo} close={toggleModal} show={isOpen} />
                              </MuiThemeProvider>
 						</Typography>
 					</div>
