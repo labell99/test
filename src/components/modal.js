@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Container, Row, Col } from 'react-bootstrap'
+import { Modal, Container, Row, Col } from 'react-bootstrap'
 import Image from './image';
 import "../styles/modal.css";
 
@@ -54,9 +54,9 @@ export const DataModal = ({ post, close, show }) => (
                     </Col>
                 </Row>
             </Container>
-            <Button variant="primary" >
+            <button variant="primary" >
 			            Save Changes
-            </Button>
+            </button>
         </Modal.Body>
     </Modal>
 )
