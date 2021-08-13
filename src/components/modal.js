@@ -30,7 +30,13 @@ export const DataModal = ({ post, close, show }) => (
                     <Col lg={8}>
                         <Container>
                             <Info title="Name:" detail={post.name} />
-                            <Info title="Age:" detail={post.age} />
+                            		          <Button
+									            color="secondary"
+									            type="button"
+									            style={{display: 'flex', justifyContent: 'right'}}
+									          >
+									            Close
+		                </Button>
                         </Container>
                     </Col>
                 </Row>
@@ -55,14 +61,5 @@ export const DataModal = ({ post, close, show }) => (
                 </Row>
             </Container>
         </Modal.Body>
-        <Modal.Footer>
-		          <Button
-		            color="secondary"
-		            type="button"
-		            style={{display: 'flex', justifyContent: 'right'}}
-		          >
-		            Close
-		          </Button>
-        </Modal.Footer>
     </Modal>
 )
