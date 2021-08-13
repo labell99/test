@@ -393,7 +393,7 @@ return (
 							    columns={columns}
 							    options={options}
                              />
-                             <DataModal post={modalInfo} close=toggleModal show={isOpen} />
+                             <DataModal post={modalInfo} close={toggleModal} show={isOpen} />
                              </MuiThemeProvider>
 						</Typography>
 					</div>
