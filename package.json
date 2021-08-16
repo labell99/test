@@ -29,9 +29,6 @@
     "formik": "^2.1.4",
     "formik-material-ui": "^2.0.1",
     "formik-material-ui-pickers": "^0.0.10",    
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-helmet": "^6.1.0",
     "prop-types": "^15.7.2",   
     "styled-components": "^5.1.1",    
     "typeface-merriweather": "^0.0.72",
@@ -41,7 +38,11 @@
     "axios": "^0.21.1",
     "moment": "^2.27.0",
     "mui-datatables": "^3.7.7",
-    "reactstrap": "^8.0.1"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "reactstrap": "^8.0.1"   
+    
   },
   "devDependencies": {
     "eslint": "^6.8.0",
