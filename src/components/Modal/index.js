@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
-import { useSingleModal } from '../contexts/SingleModalContext';
+import { useSingleModal } from '../../contexts/SingleModalContext';
 
 const { toggle, close, setContent } = useSingleModal();
 
