@@ -36,4 +36,4 @@ export const DataModal = () => (
 >
   Modal with Buttons
 </Button>
-};
+);
