@@ -1,5 +1,5 @@
 import React from 'react'
-import { DataModal } from "../modal"
+import { DataModal } from "../Modal"
 import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'

@@ -41,8 +41,7 @@
     "axios": "^0.21.1",
     "moment": "^2.27.0",
     "mui-datatables": "^3.7.7",
-    "react-bootstrap": "^1.0.0",
-    "reactstrap": "^8.9.0" 
+    "reactstrap": "^8.0.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

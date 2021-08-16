@@ -9,6 +9,7 @@ const toggleModalWithContent = (cont) => {
   toggle();
 };
 
+export const DataModal = () => (
 <Button
   color="danger"
   onClick={() =>
@@ -35,3 +36,4 @@ const toggleModalWithContent = (cont) => {
 >
   Modal with Buttons
 </Button>
+};
