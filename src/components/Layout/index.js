@@ -4,7 +4,7 @@ import { MuiThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Hidden from '@material-ui/core/Hidden'
 import Navigator from 'components/Navigator'
-import { SingleModal } from './modal';
+import { SingleModal } from '../modal';
 import { useSingleModal } from '../../contexts/SingleModalContext';
 import Header from 'components/Header'
 
