@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import Layout from './src/components/layout';
+import Layout from './src/components/Layout';
 import { SingleModalProvider } from './src/contexts/SingleModalContext';
 
 const wrapRootElement = ({ element }) => <SingleModalProvider>{element}</SingleModalProvider>;
