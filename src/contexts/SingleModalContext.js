@@ -1,15 +1,15 @@
-import React, { useState, useContext, createContext } from 'react';
+import React, { useState, useContext } from 'react';
 
-const SingleModalContext = createContext();
+const SingleModalContext = React.createContext();
 
 const useSingleModal = () => {
-  const singleModalContxt = useContext(SingleModalContext);
+  const singleModalContext = useContext(SingleModalContext);
 
-  if (!singleModalContxt) {
+  if (!singleModalContext) {
     throw new Error('useSingleModal must be used inside the SingleModalProvider');
   }
 
-  return singleModalContxt;
+  return singleModalContext;
 };
 
 const SingleModalProvider = (props) => {
