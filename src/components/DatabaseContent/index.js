@@ -1,5 +1,4 @@
 import React from 'react'
-import { DataModal } from "../Modal"
 import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
@@ -394,29 +393,6 @@ return (
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
-					           <Button
-					             color="danger"
-					             onClick={() =>
-					               toggleModalWithContent(() => {
-					                 return (
-					                   <>
-					                     <ModalHeader>Modal title</ModalHeader>
-					                     <ModalBody>Another Test</ModalBody>
-					                     <ModalFooter>
-					                       <Button color="primary" onClick={() => close()}>
-					                         Do Something
-					                       </Button>{' '}
-					                       <Button color="secondary" onClick={() => close()}>
-					                         Cancel
-					                       </Button>
-					                     </ModalFooter>
-					                   </>
-					                 );
-					               })
-					             }
-					           >
-					             Open JSX Modal
-                        </Button>
 						<Typography color="textSecondary" align="center">
 						  <MuiThemeProvider theme={getMuiTheme()}>
 							 <MUIDataTable
