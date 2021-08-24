@@ -4,8 +4,7 @@ import { MuiThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Hidden from '@material-ui/core/Hidden'
 import Navigator from 'components/Navigator'
-import { SingleModal } from '../modal';
-import { useSingleModal } from '../../contexts/SingleModalContext';
+
 import Header from 'components/Header'
 
 let theme = createMuiTheme({
@@ -151,7 +150,6 @@ const styles = {
 function Layout({ location, title, children, classes }) {
 	// eslint-disable-next-line no-undef
 	const [mobileOpen, setMobileOpen] = useState(false)
-    const { show, toggle, content } = useSingleModal();
 
 	return (
 		<MuiThemeProvider theme={theme}>
@@ -175,9 +173,6 @@ function Layout({ location, title, children, classes }) {
 					<main className={classes.mainContent}>{children}</main>
 				</div>
 			</div>
-			<SingleModal isOpen={show} toggle={() => toggle()} unmountOnClose={false}>
-			    {content}
-            </SingleModal>
 		</MuiThemeProvider>
 	)
 }

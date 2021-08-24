@@ -1,4 +1,5 @@
 import React from 'react'
+import { DataModal } from "../modal"
 import FormGroup from '@material-ui/core/FormGroup'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
@@ -6,9 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Button, ModalBody, ModalFooter, ModalHeader, ButtonGroup } from 'reactstrap'
-import { useSingleModal } from '../../contexts/SingleModalContext'
+import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Tooltip from '@material-ui/core/Tooltip'
 import IconButton from '@material-ui/core/IconButton'
@@ -52,13 +51,6 @@ function DatabaseContent({ classes }) {
 const [data, setData] = useState([]);
 const [isOpen, setIsOpen] = useState(false);
 const [modalInfo, setModalInfo] = useState({ name: "", age: "" });
-
-const { toggle, close, setContent } = useSingleModal();
-
-const toggleModalWithContent = (cont) => {
-  setContent(cont);
-  toggle();
-};
 
 function toggleModal() {
   setIsOpen(!isOpen);
@@ -393,6 +385,7 @@ return (
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
+					   <DataModal post={modalInfo} close={toggleModal} show={isOpen} />
 						<Typography color="textSecondary" align="center">
 						  <MuiThemeProvider theme={getMuiTheme()}>
 							 <MUIDataTable
