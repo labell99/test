@@ -27,7 +27,7 @@ const styles = theme => ({
 		marginRight: theme.spacing.unit,
 	},
 	contentWrapper: {
-		height: 700,
+		height: 900,
 	},
 	container: {
 		padding: '48px 36px 48px',
@@ -51,7 +51,6 @@ function Content({ classes }) {
 					</Grid>
 					<Grid lg={6} xs={12} item>
 						<Typography component="h2" variant="display1" color="textSecondary" align="center">
-							Welcome to Norvax-IDS
 						</Typography>
 					</Grid>
 				</Grid>
