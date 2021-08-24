@@ -1,6 +1,6 @@
 import React from 'react'
-import { DataModal } from "../modal"
-import FormGroup from '@material-ui/core/FormGroup'
+import Modal from '../../components/Modal';
+import FormGroup from '@material-ui/core/FormGroup';
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -57,8 +57,30 @@ function toggleModal() {
 }
 
 function popupDialog(value) {
-	  setIsOpen(!isOpen);
-    //  window.alert(`Clicked "Edited" for row ${value}`);
+ <Modal >
+    <Modal.Header>
+        <Modal.Title>
+            Modal title
+        </Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
+        <FormGroup>
+            <label>Email address</label>
+            <input
+                type="email"
+                placeholder="Email"
+            />
+        </FormGroup>
+        <FormGroup>
+            <label>Password</label>
+            <input
+                type="password"
+                placeholder="Password"
+            />
+        </FormGroup>
+    </Modal.Body>
+</Modal>
+window.alert(`Clicked "Edited" for row ${value}`);
 }
 
 useEffect(() => {
@@ -385,7 +407,6 @@ return (
 			<div className={classes.container}>
 				<Paper className={classes.paper}>
 					<div className={classes.contentWrapper}>
-					   <DataModal post={modalInfo} close={toggleModal} show={isOpen} />
 						<Typography color="textSecondary" align="center">
 						  <MuiThemeProvider theme={getMuiTheme()}>
 							 <MUIDataTable
