@@ -27,7 +27,7 @@ const styles = theme => ({
 		marginRight: theme.spacing.unit,
 	},
 	contentWrapper: {
-		height: 368,
+		height: 700,
 	},
 	container: {
 		padding: '48px 36px 48px',
