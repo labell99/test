@@ -50,7 +50,7 @@ function Content({ classes }) {
 					</Grid>
 					<Grid lg={6} xs={12} item>
 						<Typography component="h2" variant="display1" color="textSecondary" align="center">
-							Welcome to your new project
+							Welcome to Norvax-IDS
 						</Typography>
 					</Grid>
 				</Grid>
