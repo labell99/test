@@ -47,7 +47,7 @@ function Content({ classes }) {
 					justify="center"
 				>
 					<Grid lg={6} xs={12} item align="center">
-						<img src={`/images/norvax.png`} alt="NorvaxLogo" />;
+						<img src={`/images/norvax.jpg`} />
 					</Grid>
 					<Grid lg={6} xs={12} item>
 						<Typography component="h2" variant="display1" color="textSecondary" align="center">
