@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import { withStyles } from '@material-ui/core/styles'
 import ContentGraphic from './ContentGraphic'
+
 const styles = theme => ({
 	paper: {
 		margin: 'auto',
@@ -46,7 +47,7 @@ function Content({ classes }) {
 					justify="center"
 				>
 					<Grid lg={6} xs={12} item align="center">
-						<ContentGraphic />
+						<img src={`/images/norvax.png`} alt="NorvaxLogo" />;
 					</Grid>
 					<Grid lg={6} xs={12} item>
 						<Typography component="h2" variant="display1" color="textSecondary" align="center">
